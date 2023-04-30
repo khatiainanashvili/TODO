@@ -20,7 +20,7 @@ export default function Login() {
     e.preventDefault();
     if (savedImage && name) {
       localStorage.setItem("usesrname", JSON.stringify(name));
-      navigate("/todo/UserPage", {
+      navigate("/todo/userpage", {
         state: {
           image: savedImage,
           username: name,
