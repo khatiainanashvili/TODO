@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-container">
       <img src={image} alt="icon" />
       <h1>Keep Track Of Daily Tasks In Life</h1>
-      <Link to="/todo/login">
+      <Link to="/login">
         <button>Get Started</button>
       </Link>
     </div>
