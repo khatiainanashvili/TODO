@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import "./UserPage.css";
 import Todo from "./Todo";
 export default function UserPage() {
   const [active, setActive] = useState(false);
@@ -7,7 +8,7 @@ export default function UserPage() {
   const location = useLocation();
 
   const handleClick = () => {
-    setActive(true);
+    setActive(!active);
   };
   const handlelogOut = () => {
     localStorage.clear();
@@ -15,21 +16,26 @@ export default function UserPage() {
   console.log(location.state.name);
   return (
     <>
-      <h1>{location.state.username}</h1>
-      <img
-        src={location.state.image}
-        className="header-image"
-        alt="klfkmemf
+      <header>
+        <h1>TO DO </h1>
+        <div className="user-info">
+          <span>{location.state.username}</span>
+          <img
+            src={location.state.image}
+            className="header-image"
+            alt="klfkmemf
          "
-        onClick={handleClick}
-      />
-      {active == true ? (
-        <Link to="/todo/">
-          <button onClick={handlelogOut}>log-out</button>
-        </Link>
-      ) : (
-        ""
-      )}
+            onClick={handleClick}
+          />
+          {active == true ? (
+            <Link to="/todo/">
+              <button onClick={handlelogOut}>log-out</button>
+            </Link>
+          ) : (
+            ""
+          )}
+        </div>
+      </header>
       <Todo />
     </>
   );

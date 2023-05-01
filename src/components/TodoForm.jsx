@@ -19,7 +19,7 @@ export default function TodoForm({ addTodo }) {
           value={todoItem}
           onChange={(e) => setTodoItem(e.target.value)}
         />
-        <button className="btn">Add</button>
+        <button className="todo-btn btn">Add</button>
       </div>
     </form>
   );

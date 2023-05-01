@@ -1,0 +1,28 @@
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin:0 10px;
+}
+.home-container img {
+    width: 90px;
+    height: 165px;
+}
+.hompage-headline{
+    font-family: "Poppins";
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+}
+.get-started-btn {
+    width: 200px;
+    height: 65px;
+    font-weight: 300;
+    font-size: 24px;
+    border-radius: 4px;
+}

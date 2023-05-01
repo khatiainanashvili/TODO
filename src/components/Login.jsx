@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import imageIcon from "../assets/icons/app-photo.svg";
-
+import "./Login.css";
 export default function Login() {
   const [image, setImage] = useState();
   const [name, setName] = useState();
@@ -28,30 +28,32 @@ export default function Login() {
       });
     }
   }
-
   const savedImage = localStorage.getItem("uploadedImage");
 
   return (
-    <>
+    <div className="login-container">
       <form className="autorisation-form" onSubmit={handleSumbit}>
-        <label>add a photo</label>
-        <div className="upload-avatar">
-          <input
-            type="file"
-            onChange={handleImageUpload}
-            className="image-input"
-            id="file"
-          />
-          <label htmlFor="file">
-            <img src={imageIcon} alt="imageIcon" />
-          </label>
-          {savedImage && (
-            <img
-              src={savedImage}
-              alt="Uploaded Image"
-              className="avatar-image"
+        <h2>Get Started</h2>
+        <div>
+          <label>add a photo</label>
+          <div className="upload-avatar">
+            <input
+              type="file"
+              onChange={handleImageUpload}
+              className="image-input"
+              id="file"
             />
-          )}
+            <label htmlFor="file">
+              <img src={imageIcon} alt="imageIcon" />
+            </label>
+            {savedImage && (
+              <img
+                src={savedImage}
+                alt="Uploaded Image"
+                className="avatar-image"
+              />
+            )}
+          </div>
         </div>
         <div className="input-name">
           <label>fill in you name</label>
@@ -59,10 +61,12 @@ export default function Login() {
             type="text"
             onChange={(e) => setName(e.target.value)}
             ref={username}
+            className="username-input"
+            placeholder="your name"
           />
-          <button>Sign In</button>
         </div>
+        <button className="sign-in-btn btn">Sign In</button>
       </form>
-    </>
+    </div>
   );
 }

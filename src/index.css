@@ -1,9 +1,27 @@
-*, ::after, ::before {
- box-sizing: border-box;
- margin:0;
- padding: 0;
-}
-
-body {
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+ :root {
+  --gray-color: #ededed;
+  --input-background-color: #E6EBFF;
+  --green-color: #5EFC8D;
+ }
+ body{
+  background-color: #000;
+  font-family:'Poppins';
+ }
+ .btn {
+  background-color: var(--green-color);
+  border:0;
+  cursor: pointer;
   font-family: 'Poppins';
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in;
+ }
+ .btn:hover {
+  background-color: #fff;
 }
+ 
+ 

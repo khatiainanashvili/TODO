@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
-
+import "./Todo.css";
 export default function Todo() {
   const [todos, setTodos] = useState(() => {
     const localValue = localStorage.getItem("ITEMS");
@@ -41,9 +41,16 @@ export default function Todo() {
     });
   }
   return (
-    <>
-      <TodoForm addTodo={addTodo} />
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-    </>
+    <div className="todo-container">
+      <div className="todo">
+        <h2>Add Your Daily Tasks</h2>
+        <TodoForm addTodo={addTodo} />
+        <TodoList
+          todos={todos}
+          toggleTodo={toggleTodo}
+          deleteTodo={deleteTodo}
+        />
+      </div>
+    </div>
   );
 }
