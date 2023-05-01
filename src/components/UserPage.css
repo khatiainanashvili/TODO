@@ -41,7 +41,30 @@ header h1 {
     .header-image {
       width: 58px;
       height: 58px;
-      margin-left: 20px;}
+      margin-left: 20px;
+      
+    }
+  }
+  .avatar {
+    position: relative;
+  }
+  .logout-btn {
+    border: 0;
+    background-color: var(--input-background-color);
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding:5px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+  }
+  .logout-btn > img {
+    width: 20px;
+    margin-left: 5px;
   }
   @media only screen and (min-width: 1366px){
     .header-image {
