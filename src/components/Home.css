@@ -20,9 +20,44 @@
     margin-bottom: 30vh;
 }
 .get-started-btn {
-    width: 200px;
-    height: 65px;
+    padding:15px 50px ;
     font-weight: 300;
     font-size: 24px;
+    
     border-radius: 4px;
+}
+@media only screen and (min-width: 425px)  {
+    .hompage-headline {
+        font-size: 48px;
+    }
+    .get-started-btn {
+        padding:25px 60px ;
+        font-size: 36px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .hompage-headline {
+        font-size: 48px;
+    }
+    .get-started-btn {
+        padding:18px 70px ;
+        font-size: 36px;
+    }
+    .hompage-headline{
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+    }
+}
+@media only screen and (min-width: 1366px){
+    .hompage-headline {
+        font-size: 54px;
+    }
+    .get-started-btn {
+        padding:16px 58px ;
+        font-size: 48px;
+    }
+    .hompage-headline{
+        margin-top: 46px;
+        margin-bottom: 149px;
+    }
 }

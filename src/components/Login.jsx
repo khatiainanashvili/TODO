@@ -34,7 +34,7 @@ export default function Login() {
     <div className="login-container">
       <form className="autorisation-form" onSubmit={handleSumbit}>
         <h2>Get Started</h2>
-        <div>
+        <div className="upload-image">
           <label>add a photo</label>
           <div className="upload-avatar">
             <input
