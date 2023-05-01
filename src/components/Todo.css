@@ -5,7 +5,6 @@
     align-items: center;
     height: 100vh;
     background-color: #fff;
-
 }
 .todo {
     width: 90%;
@@ -37,7 +36,6 @@
 .form-row input:focus {
     outline: 0;
 }
-
 .todo-item{
     background-color: black;
     color:#FFFFFF;
@@ -45,17 +43,18 @@
     align-items: center !important;
     justify-content: space-between;
     height: auto;
-    padding: 5px 10px;
+    padding-left: 10px;
+    padding-right: 0 !important;
     font-weight: 300;
     border-radius: 4px;
     margin: 16px 0;
+    height: 50px;
   }
   input[type=checkbox] {   
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
   }
-
   .done-todo {
     background-color: #ededed;
   }
@@ -63,29 +62,91 @@
     background-color: #a6e1bd;
   }
   .done-label{
-    width: 17px;
-    height: 20px;
-    margin:0 20px;
+    width: 35px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
+    padding:0 10px ;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
   }
   .done-label >img {
-    width: 20px;
-    height: 100%;
+    width: 120%;
+    height: 50px;
   }
-
+  .delete-btn :hover {
+    background-color: rgb(255, 123, 123);
+    border-radius: 2px;
+  }
  .delete-btn {
     border: 0;
     background-color: transparent;
-    
+    height: 50px;
+    border-radius: 2px !important;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
 }
 .delete-btn > img {
-    width: 17px;
-    height: 30px;
+    width: 35px;
+    height: 50px;
+    padding: 0 10px;
 }
 .Todo-controller {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 426px) {
+  
+.form-row input{
+    font-size: 18px;
+    padding: 20px ;
+}
+.todo-btn{
+  width: 20%;
+  padding: 16px 0;
+  font-size: 22px;
+}
+.todo-item{
+  padding: 10px 15px;
+  font-size: 18px;
+  height: 54px;
+}
+.delete-btn {
+  
+  height: 54px !important;
+}
+.delete-btn >img {
+  width: 40px;
+  height: 54px !important;
+}
+.done-label {
+  height: 54px;
+  
+}
+.form-row {
+  margin-bottom: 40px;
+}
+}
+@media only screen and (min-width: 1024px){
+.todo > h2 {
+    font-size: 42px;
+}
+.todo {
+  width: 500px;
+}
+.form-row {
+  margin-bottom: 45px;
+}
+}
+@media only screen and (min-width: 1366px){
+  .form-row {
+    margin-bottom: 51px;
+  }
+  .todo {
+    width: 595px;
+}
 }
