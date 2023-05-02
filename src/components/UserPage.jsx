@@ -31,7 +31,7 @@ export default function UserPage() {
               onClick={handleClick}
             />
             {active == true ? (
-              <Link to="/todo/">
+              <Link to="/">
                 <button className="logout-btn" onClick={handlelogOut}>
                   log-out <img src={logoutIcon} />
                 </button>
