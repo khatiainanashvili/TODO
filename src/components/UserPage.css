@@ -16,14 +16,60 @@ header h1 {
     border-radius: 50%;
     margin-left: 10px;
     cursor: pointer;
+   
   }
+  .image-container {
+    position: relative;
+    transition: opacity 0.2 ease-in;
+  }
+  .image-container:hover {
+    opacity: 0.8;
+  }
+  /* .image-container::after {
+    content: url(../assets/icons/arrow.svg);
+    width: 20px;
+    height: 20px;
+    background: #ffffff93;
+    position: absolute;
+    top: 80%;
+    left:50% ;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+  } */
   .user-info{
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 300;
   }
-
+  .avatar {
+    position: relative;
+   
+  }
+ 
+  .logout-btn {
+    border: 0;
+    background-color: var(--input-background-color);
+    position: absolute;
+    right: 0%;
+    top: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding:5px;
+    font-family: 'Poppins';
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in;
+  }
+  .logout-btn > img {
+    width: 20px;
+    margin-left: 5px;
+  }
+  .logout-btn:hover{
+    background-color: var(--green-color);
+  }
   @media only screen and (min-width: 426px)  {
     header{
       padding:14px 18px;
@@ -47,27 +93,7 @@ header h1 {
       
     }
   }
-  .avatar {
-    position: relative;
-  }
-  .logout-btn {
-    border: 0;
-    background-color: var(--input-background-color);
-    position: absolute;
-    right: 0%;
-    top: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding:5px;
-    font-family: 'Poppins';
-    border-radius: 4px;
-  }
-  .logout-btn > img {
-    width: 20px;
-    margin-left: 5px;
-  }
+  
   @media only screen and (min-width: 1366px){
     .header-image {
       width: 68px;

@@ -20,13 +20,14 @@ export default function UserPage({ image, username }) {
         <div className="user-info">
           <span>{username}</span>
           <div className="avatar">
-            <img
-              src={image}
-              className="header-image"
-              alt="klfkmemf
+            <div className="image-container" onClick={handleClick}>
+              <img
+                src={image}
+                className="header-image"
+                alt="klfkmemf
          "
-              onClick={handleClick}
-            />
+              />
+            </div>
             {active == true ? (
               <Link to="/">
                 <button className="logout-btn" onClick={handlelogOut}>
