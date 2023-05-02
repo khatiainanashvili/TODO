@@ -7,7 +7,7 @@ export default function Page404() {
       <h1> 404 </h1>
       <h2>Page Not Found</h2>
       <Link to="/">
-        <button className="btn">Go to Home</button>
+        <button className="btn go-home-btn">Go to Home</button>
       </Link>
     </div>
   );

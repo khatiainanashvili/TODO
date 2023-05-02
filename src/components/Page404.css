@@ -14,8 +14,8 @@
 .page404 h2 {
     color: rgba(240, 255, 255, 0.37);
 }
-button {
+.go-home-btn {
     font-size: 2em;
-    padding: 5px 10px;
-    margin-top: 10px;
+    padding: 5px 10px; 
+     margin-top: 10px;
 }
