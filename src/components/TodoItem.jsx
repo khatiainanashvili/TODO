@@ -15,10 +15,10 @@ export default function TodoItem({
           type="checkbox"
           className="todo-item-btn"
           checked={complited}
-          id="checkbox"
+          id={id}
           onChange={(e) => toggleTodo(id, e.target.checked)}
         />
-        <label className="done-label" htmlFor="checkbox">
+        <label className="done-label" htmlFor={id}>
           <img src={done} />
         </label>
 
