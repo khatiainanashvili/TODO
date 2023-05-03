@@ -62,14 +62,14 @@
     background-color: #a6e1bd;
   }
   .done-label{
-    width: 35px;
+    width: 37px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
     padding:0 10px ;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
   }
   .done-label >img {
@@ -78,18 +78,18 @@
   }
   .delete-btn :hover {
     background-color: rgb(255, 123, 123);
-    border-radius: 2px;
+    border-radius: 4px;
   }
  .delete-btn {
     border: 0;
     background-color: transparent;
     height: 50px;
     border-radius: 2px !important;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 .delete-btn > img {
-    width: 35px;
+    width: 40px;
     height: 50px;
     padding: 0 10px;
 }
@@ -144,13 +144,13 @@
 }
 .todo-btn{
   font-size: 28px;
-  padding: 8px 0 16px 0;
+  padding: 9px 0 16px 0;
 }
 }
 @media only screen and (min-width: 1366px){
   .todo-btn{
     font-size: 32px;
-    padding: 6px 0 14px 0;
+    padding: 5px 0 14px 0;
   }
   .form-row {
     margin-bottom: 51px;
